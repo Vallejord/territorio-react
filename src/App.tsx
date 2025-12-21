@@ -1,5 +1,6 @@
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
+import { Introduction } from './components/sections/Introduction'
 
 function App() {
   const handleLanguageChange = (lang: 'es' | 'en') => {
@@ -17,6 +18,7 @@ function App() {
         onMenuToggle={handleMenuToggle}
       />
       <Hero />
+      <Introduction />
     </>
   )
 }
