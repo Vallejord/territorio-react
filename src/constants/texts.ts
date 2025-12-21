@@ -6,6 +6,17 @@ export const texts = {
     workShowcase: {
       categories: 'PUBLICIDAD // REDES // TV // VIDEOCLIPS // DOCUMENTALES',
     },
+    currentProjects: {
+      title: 'Proyectos en curso',
+      polo: {
+        title: 'POLO',
+        subtitle: 'Polo Cortometraje - Pre producción',
+      },
+      territorio: {
+        title: 'Territorio',
+        subtitle: 'Documental - Post producción',
+      },
+    },
   },
   en: {
     introduction: {
@@ -13,6 +24,17 @@ export const texts = {
     },
     workShowcase: {
       categories: 'ADVERTISING // SOCIAL MEDIA // TV // VIDEOCLIPS // DOCUMENTARIES',
+    },
+    currentProjects: {
+      title: 'Projects in Progress',
+      polo: {
+        title: 'POLO',
+        subtitle: 'Polo Short Film - Pre-production',
+      },
+      territorio: {
+        title: 'Territorio',
+        subtitle: 'Documentary - Post-production',
+      },
     },
   },
 } as const

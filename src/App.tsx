@@ -2,6 +2,7 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Introduction } from './components/sections/Introduction'
 import { WorkShowcase } from './components/sections/WorkShowcase'
+import { CurrentProjects } from './components/sections/CurrentProjects'
 
 function App() {
   const handleLanguageChange = (lang: 'es' | 'en') => {
@@ -21,6 +22,7 @@ function App() {
       <Hero />
       <Introduction />
       <WorkShowcase />
+      <CurrentProjects />
     </>
   )
 }
