@@ -10,7 +10,7 @@ import videoMobile from '../../assets/videos/header/header-smart.mp4'
 
 export const Hero = () => {
   return (
-    <HeroSection role="region" aria-label="Hero section">
+    <HeroSection id="hero" role="region" aria-label="Hero section">
       <VideoBackground
         data-testid="hero-video"
         autoPlay
