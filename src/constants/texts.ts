@@ -17,6 +17,9 @@ export const texts = {
         subtitle: 'Documental - Post producción',
       },
     },
+    team: {
+      title: 'El equipo',
+    },
   },
   en: {
     introduction: {
@@ -35,6 +38,9 @@ export const texts = {
         title: 'Territorio',
         subtitle: 'Documentary - Post-production',
       },
+    },
+    team: {
+      title: 'The Team',
     },
   },
 } as const
