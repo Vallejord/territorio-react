@@ -3,6 +3,7 @@ import { Hero } from './components/Hero'
 import { Introduction } from './components/sections/Introduction'
 import { WorkShowcase } from './components/sections/WorkShowcase'
 import { CurrentProjects } from './components/sections/CurrentProjects'
+import { Team } from './components/sections/Team'
 
 function App() {
   const handleLanguageChange = (lang: 'es' | 'en') => {
@@ -23,6 +24,7 @@ function App() {
       <Introduction />
       <WorkShowcase />
       <CurrentProjects />
+      <Team />
     </>
   )
 }
