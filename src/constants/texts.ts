@@ -20,6 +20,32 @@ export const texts = {
     team: {
       title: 'El equipo',
     },
+    contact: {
+      title: '¿Querés contactarnos por un proyecto, una colaboración o simplemente para saludarnos?',
+      form: {
+        name: 'NOMBRE',
+        email: 'MAIL',
+        message: 'MENSAJE',
+        submit: 'ENVIAR',
+      },
+      emails: {
+        title: 'Emails',
+        general: 'hola@territorio.com.ar',
+        leandro: 'leandrocaterberg@territorio.com.ar',
+      },
+      offices: {
+        ba: {
+          title: 'Buenos Aires',
+          address: 'Zaballa 3584, dto 8. CP1426',
+          phone: '+54 9 11 50501840',
+        },
+        mendoza: {
+          title: 'Mendoza',
+          address: 'Guardia Vieja 1310, CP1426',
+          phone: '+54 9 261 6335309',
+        },
+      },
+    },
   },
   en: {
     introduction: {
@@ -41,6 +67,32 @@ export const texts = {
     },
     team: {
       title: 'The Team',
+    },
+    contact: {
+      title: 'Want to contact us for a project, collaboration, or just to say hello?',
+      form: {
+        name: 'NAME',
+        email: 'EMAIL',
+        message: 'MESSAGE',
+        submit: 'SEND',
+      },
+      emails: {
+        title: 'Emails',
+        general: 'hola@territorio.com.ar',
+        leandro: 'leandrocaterberg@territorio.com.ar',
+      },
+      offices: {
+        ba: {
+          title: 'Buenos Aires',
+          address: 'Zaballa 3584, dto 8. CP1426',
+          phone: '+54 9 11 50501840',
+        },
+        mendoza: {
+          title: 'Mendoza',
+          address: 'Guardia Vieja 1310, CP1426',
+          phone: '+54 9 261 6335309',
+        },
+      },
     },
   },
 } as const
