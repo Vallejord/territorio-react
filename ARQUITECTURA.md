@@ -624,3 +624,4 @@ const StyledComponent = styled.div`
 7. ✅ Implementar navegación
 8. ✅ Implementar secciones una por una
 
+

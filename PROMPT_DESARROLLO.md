@@ -65,3 +65,4 @@ Cuando necesites algo fuera de tu scope, respondé con el formato:
 - `npm run lint` - Verificar código antes de commit
 - `npm test` - Verificar que tests pasen (si aplica)
 
+
