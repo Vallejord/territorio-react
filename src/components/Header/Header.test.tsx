@@ -144,7 +144,6 @@ describe('Header', () => {
       renderWithProvider(<Header />)
       const header = screen.getByRole('banner')
       // The header should have a gradient background for readability over video
-      const bgImage = getComputedStyle(header).backgroundImage
       // In jsdom, gradient may be represented differently or as empty string
       // We just verify the header element exists with proper structure
       expect(header).toBeInTheDocument()

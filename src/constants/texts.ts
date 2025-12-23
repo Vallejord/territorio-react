@@ -35,12 +35,12 @@ export const texts = {
       },
       offices: {
         ba: {
-          title: 'Buenos Aires',
+          title: 'Oficina Buenos Aires',
           address: 'Zaballa 3584, dto 8. CP1426',
           phone: '+54 9 11 50501840',
         },
         mendoza: {
-          title: 'Mendoza',
+          title: 'Oficina Mendoza',
           address: 'Guardia Vieja 1310, CP1426',
           phone: '+54 9 261 6335309',
         },
@@ -83,12 +83,12 @@ export const texts = {
       },
       offices: {
         ba: {
-          title: 'Buenos Aires',
+          title: 'Buenos Aires Office',
           address: 'Zaballa 3584, dto 8. CP1426',
           phone: '+54 9 11 50501840',
         },
         mendoza: {
-          title: 'Mendoza',
+          title: 'Mendoza Office',
           address: 'Guardia Vieja 1310, CP1426',
           phone: '+54 9 261 6335309',
         },

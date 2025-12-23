@@ -5,6 +5,7 @@ import { WorkShowcase } from './components/sections/WorkShowcase'
 import { CurrentProjects } from './components/sections/CurrentProjects'
 import { Team } from './components/sections/Team'
 import { Contact } from './components/sections/Contact'
+import { Footer } from './components/Footer'
 
 function App() {
   const handleLanguageChange = (lang: 'es' | 'en') => {
@@ -27,6 +28,7 @@ function App() {
       <CurrentProjects />
       <Team />
       <Contact />
+      <Footer />
     </>
   )
 }

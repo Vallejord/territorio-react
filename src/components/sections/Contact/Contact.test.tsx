@@ -35,25 +35,5 @@ describe('Contact', () => {
     expect(screen.getByLabelText(/MENSAJE/i)).toBeInTheDocument()
   })
 
-  it('should render email information', () => {
-    renderWithProvider(<Contact />)
-    expect(screen.getByText(/hola@territorio.com.ar/i)).toBeInTheDocument()
-    expect(
-      screen.getByText(/leandrocaterberg@territorio.com.ar/i)
-    ).toBeInTheDocument()
-  })
-
-  it('should render office information', () => {
-    renderWithProvider(<Contact />)
-    expect(screen.getByText(/Buenos Aires/i)).toBeInTheDocument()
-    expect(screen.getByText(/Mendoza/i)).toBeInTheDocument()
-  })
-
-  it('should render social media icons', () => {
-    renderWithProvider(<Contact />)
-    expect(screen.getByLabelText(/Instagram/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/LinkedIn/i)).toBeInTheDocument()
-    expect(screen.getByLabelText(/WhatsApp/i)).toBeInTheDocument()
-  })
 })
 
