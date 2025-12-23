@@ -27,7 +27,9 @@ describe('Introduction', () => {
       </LanguageProvider>
     )
 
-    expect(screen.getByText(/Convertimos IDEAS/i)).toBeInTheDocument()
+    // El texto está dividido en múltiples spans, buscar por parte del texto
+    expect(screen.getByText(/Convertimos/i)).toBeInTheDocument()
+    expect(screen.getByText(/IDEAS/i)).toBeInTheDocument()
   })
 
   it('should emphasize keywords IDEAS, ESCENCIA, CLIENTE, AUDIENCIA', () => {
@@ -37,12 +39,24 @@ describe('Introduction', () => {
       </LanguageProvider>
     )
 
-    // Verificar que las palabras enfatizadas están presentes
-    const missionText = screen.getByText(/Convertimos/i).textContent
-    expect(missionText).toContain('IDEAS')
-    expect(missionText).toContain('ESCENCIA')
-    expect(missionText).toContain('CLIENTE')
-    expect(missionText).toContain('AUDIENCIA')
+    // Verificar que las palabras enfatizadas están presentes en el documento
+    // El texto está dividido en múltiples elementos, así que buscamos cada palabra individualmente
+    expect(screen.getByText(/IDEAS/i)).toBeInTheDocument()
+    expect(screen.getByText(/ESCENCIA/i)).toBeInTheDocument()
+    expect(screen.getByText(/CLIENTE/i)).toBeInTheDocument()
+    expect(screen.getByText(/AUDIENCIA/i)).toBeInTheDocument()
+    
+    // Verificar que las palabras enfatizadas están dentro de elementos con estilo especial
+    const ideasElement = screen.getByText(/IDEAS/i)
+    const escenciaElement = screen.getByText(/ESCENCIA/i)
+    const clienteElement = screen.getByText(/CLIENTE/i)
+    const audienciaElement = screen.getByText(/AUDIENCIA/i)
+    
+    // Verificar que están dentro de elementos span (las palabras enfatizadas)
+    expect(ideasElement.tagName).toBe('SPAN')
+    expect(escenciaElement.tagName).toBe('SPAN')
+    expect(clienteElement.tagName).toBe('SPAN')
+    expect(audienciaElement.tagName).toBe('SPAN')
   })
 
   it('should render client logos', () => {
