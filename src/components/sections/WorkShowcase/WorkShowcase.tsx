@@ -5,7 +5,6 @@ import {
   CategoryText,
   ProjectsGrid,
   ProjectCard,
-  ProjectThumbnail,
   ProjectOverlay,
   ProjectTitle,
 } from './WorkShowcase.styles'
@@ -13,6 +12,7 @@ import { useLanguage } from '../../../contexts/LanguageContext'
 import { projects } from '../../../constants/projects'
 import { texts } from '../../../constants/texts'
 import { VideoModal } from '../../features/VideoModal'
+import { LazyImage } from '../../common/LazyImage'
 
 export const WorkShowcase = () => {
   const { language } = useLanguage()
@@ -45,10 +45,9 @@ export const WorkShowcase = () => {
             onClick={() => handleProjectClick(project.id)}
             $index={index}
           >
-            <ProjectThumbnail
+            <LazyImage
               src={project.thumbnail}
               alt={project.title[language]}
-              loading="lazy"
             />
             <ProjectOverlay>
               <ProjectTitle>{project.title[language]}</ProjectTitle>
