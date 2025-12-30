@@ -50,11 +50,10 @@ describe('Hero', () => {
       expect(video).toHaveAttribute('playsinline')
     })
 
-    it('video has at least one source element', () => {
+    it('video has a src attribute with video URL', () => {
       render(<Hero />)
-      const video = screen.getByTestId('hero-video')
-      const sources = video.querySelectorAll('source')
-      expect(sources.length).toBeGreaterThan(0)
+      const video = screen.getByTestId('hero-video') as HTMLVideoElement
+      expect(video.src).toContain('.mp4')
     })
   })
 
