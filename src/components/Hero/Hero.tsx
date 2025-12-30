@@ -3,10 +3,7 @@ import {
   VideoBackground,
   Overlay,
 } from './Hero.styles'
-
-// Import video sources
-import videoDesktop from '../../assets/videos/header/header-desktop-720.mp4'
-import videoMobile from '../../assets/videos/header/header-smart.mp4'
+import { VIDEO_URLS } from '../../config/storage'
 
 export const Hero = () => {
   return (
@@ -17,10 +14,11 @@ export const Hero = () => {
         muted
         loop
         playsInline
+        preload="metadata"
       >
         {/* Mobile-first: smaller video loads first on mobile connections */}
-        <source src={videoMobile} type="video/mp4" media="(max-width: 768px)" />
-        <source src={videoDesktop} type="video/mp4" />
+        <source src={VIDEO_URLS.header.mobile} type="video/mp4" media="(max-width: 768px)" />
+        <source src={VIDEO_URLS.header.desktop} type="video/mp4" />
       </VideoBackground>
       
       <Overlay data-testid="hero-overlay" />

@@ -1,6 +1,4 @@
-import leandroImage from '../assets/images/team/leandro.jpg'
-import joanImage from '../assets/images/team/joan.jpg'
-import andreaImage from '../assets/images/team/andrea.jpg'
+import { IMAGE_URLS } from '../config/storage'
 
 export interface TeamMember {
   id: string
@@ -14,19 +12,19 @@ export const teamMembers: TeamMember[] = [
     id: 'leandro',
     name: 'Leandro Caterberg',
     role: { es: 'Director y editor', en: 'Director and editor' },
-    image: leandroImage,
+    image: IMAGE_URLS.team.leandro,
   },
   {
     id: 'joan',
     name: 'Joan Pesquera',
     role: { es: 'Director creativo y editor', en: 'Creative director and editor' },
-    image: joanImage,
+    image: IMAGE_URLS.team.joan,
   },
   {
     id: 'andrea',
     name: 'Andrea Madruga',
     role: { es: 'Productora y realizadora', en: 'Producer and director' },
-    image: andreaImage,
+    image: IMAGE_URLS.team.andrea,
   },
 ]
 

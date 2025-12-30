@@ -1,31 +1,5 @@
-// Proyectos del showcase
-import proyecto01Thumb from '../assets/images/work/proyecto-01.png'
-import proyecto02Thumb from '../assets/images/work/proyecto-02.png'
-import proyecto03Thumb from '../assets/images/work/proyecto-03.png'
-import proyecto04Thumb from '../assets/images/work/proyecto-04.png'
-import proyecto05Thumb from '../assets/images/work/proyecto-05.png'
-import proyecto06Thumb from '../assets/images/work/proyecto-06.png'
-import proyecto07Thumb from '../assets/images/work/proyecto-07.png'
-import proyecto08Thumb from '../assets/images/work/proyecto-08.png'
-import proyecto09Thumb from '../assets/images/work/proyecto-09.png'
-import proyecto10Thumb from '../assets/images/work/proyecto-10.png'
-import proyecto11Thumb from '../assets/images/work/proyecto-11.png'
-import proyecto12Thumb from '../assets/images/work/proyecto-12.png'
-
-// Nota: proyecto-01.mp4 no existe, usando proyecto-02 temporalmente
-// TODO: Agregar proyecto-01.mp4 cuando esté disponible
-import proyecto01Video from '../assets/videos/work/proyecto-02.mp4'
-import proyecto02Video from '../assets/videos/work/proyecto-02.mp4'
-import proyecto03Video from '../assets/videos/work/proyecto-03.mp4'
-import proyecto04Video from '../assets/videos/work/proyecto-04.mp4'
-import proyecto05Video from '../assets/videos/work/proyecto-05.mp4'
-import proyecto06Video from '../assets/videos/work/proyecto-06.mp4'
-import proyecto07Video from '../assets/videos/work/proyecto-07.mp4'
-import proyecto08Video from '../assets/videos/work/proyecto-08.mp4'
-import proyecto09Video from '../assets/videos/work/proyecto-09.mp4'
-import proyecto10Video from '../assets/videos/work/proyecto-10.mp4'
-import proyecto11Video from '../assets/videos/work/proyecto-11.mp4'
-import proyecto12Video from '../assets/videos/work/proyecto-12.mp4'
+// Videos e imágenes desde Cloud Storage
+import { VIDEO_URLS, IMAGE_URLS } from '../config/storage'
 
 export type ProjectCategory =
   | 'publicidad'
@@ -56,8 +30,8 @@ export const projects: Project[] = [
       en: 'Project 01',
     },
     category: 'publicidad',
-    thumbnail: proyecto01Thumb,
-    video: proyecto01Video,
+    thumbnail: IMAGE_URLS.work.proyecto01,
+    video: VIDEO_URLS.work.proyecto02, // Nota: proyecto-01.mp4 no existe, usando proyecto-02 temporalmente
   },
   {
     id: 'proyecto-02',
@@ -66,8 +40,8 @@ export const projects: Project[] = [
       en: 'Bleuet de France 2025',
     },
     category: 'publicidad',
-    thumbnail: proyecto02Thumb,
-    video: proyecto02Video,
+    thumbnail: IMAGE_URLS.work.proyecto02,
+    video: VIDEO_URLS.work.proyecto02,
   },
   {
     id: 'proyecto-03',
@@ -76,8 +50,8 @@ export const projects: Project[] = [
       en: 'L\'Oréal Professionnel Paris',
     },
     category: 'publicidad',
-    thumbnail: proyecto03Thumb,
-    video: proyecto03Video,
+    thumbnail: IMAGE_URLS.work.proyecto03,
+    video: VIDEO_URLS.work.proyecto03,
   },
   {
     id: 'proyecto-04',
@@ -86,8 +60,8 @@ export const projects: Project[] = [
       en: 'Colgate - Vivo Colgate',
     },
     category: 'publicidad',
-    thumbnail: proyecto04Thumb,
-    video: proyecto04Video,
+    thumbnail: IMAGE_URLS.work.proyecto04,
+    video: VIDEO_URLS.work.proyecto04,
   },
   {
     id: 'proyecto-05',
@@ -96,8 +70,8 @@ export const projects: Project[] = [
       en: 'Demo Reel',
     },
     category: 'videoclips',
-    thumbnail: proyecto05Thumb,
-    video: proyecto05Video,
+    thumbnail: IMAGE_URLS.work.proyecto05,
+    video: VIDEO_URLS.work.proyecto05,
   },
   {
     id: 'proyecto-06',
@@ -106,8 +80,8 @@ export const projects: Project[] = [
       en: 'Flybondi',
     },
     category: 'redes',
-    thumbnail: proyecto06Thumb,
-    video: proyecto06Video,
+    thumbnail: IMAGE_URLS.work.proyecto06,
+    video: VIDEO_URLS.work.proyecto06,
   },
   {
     id: 'proyecto-07',
@@ -116,8 +90,8 @@ export const projects: Project[] = [
       en: 'Ford Ranger',
     },
     category: 'publicidad',
-    thumbnail: proyecto07Thumb,
-    video: proyecto07Video,
+    thumbnail: IMAGE_URLS.work.proyecto07,
+    video: VIDEO_URLS.work.proyecto07,
   },
   {
     id: 'proyecto-08',
@@ -126,8 +100,8 @@ export const projects: Project[] = [
       en: 'Fortaleza - CIRC Documentary',
     },
     category: 'documentales',
-    thumbnail: proyecto08Thumb,
-    video: proyecto08Video,
+    thumbnail: IMAGE_URLS.work.proyecto08,
+    video: VIDEO_URLS.work.proyecto08,
   },
   {
     id: 'proyecto-09',
@@ -136,8 +110,8 @@ export const projects: Project[] = [
       en: 'KCC Trailer',
     },
     category: 'documentales',
-    thumbnail: proyecto09Thumb,
-    video: proyecto09Video,
+    thumbnail: IMAGE_URLS.work.proyecto09,
+    video: VIDEO_URLS.work.proyecto09,
   },
   {
     id: 'proyecto-10',
@@ -146,8 +120,8 @@ export const projects: Project[] = [
       en: 'KCC II Trailer',
     },
     category: 'documentales',
-    thumbnail: proyecto10Thumb,
-    video: proyecto10Video,
+    thumbnail: IMAGE_URLS.work.proyecto10,
+    video: VIDEO_URLS.work.proyecto10,
   },
   {
     id: 'proyecto-11',
@@ -156,8 +130,8 @@ export const projects: Project[] = [
       en: 'Sanofi Go To Market',
     },
     category: 'publicidad',
-    thumbnail: proyecto11Thumb,
-    video: proyecto11Video,
+    thumbnail: IMAGE_URLS.work.proyecto11,
+    video: VIDEO_URLS.work.proyecto11,
   },
   {
     id: 'proyecto-12',
@@ -166,8 +140,8 @@ export const projects: Project[] = [
       en: 'Somos Docentes 2025',
     },
     category: 'tv',
-    thumbnail: proyecto12Thumb,
-    video: proyecto12Video,
+    thumbnail: IMAGE_URLS.work.proyecto12,
+    video: VIDEO_URLS.work.proyecto12,
   },
 ]
 

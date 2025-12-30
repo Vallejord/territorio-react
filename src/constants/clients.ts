@@ -1,11 +1,4 @@
-// Logos de clientes
-import adobeLogo from '../assets/images/clients/adobe.png'
-import bidLogo from '../assets/images/clients/bid.png'
-import colgateLogo from '../assets/images/clients/colgate.png'
-import flybondiLogo from '../assets/images/clients/flybondi.png'
-import forcaLogo from '../assets/images/clients/forca.png'
-import sanofiLogo from '../assets/images/clients/sanofi.png'
-import fordLogo from '../assets/images/clients/ford.png'
+import { IMAGE_URLS } from '../config/storage'
 
 export interface ClientLogo {
   name: string
@@ -16,37 +9,37 @@ export interface ClientLogo {
 export const clientLogos: ClientLogo[] = [
   {
     name: 'Adobe',
-    image: adobeLogo,
+    image: IMAGE_URLS.clients.adobe,
     alt: 'Adobe',
   },
   {
     name: 'BID',
-    image: bidLogo,
+    image: IMAGE_URLS.clients.bid,
     alt: 'BID',
   },
   {
     name: 'Colgate',
-    image: colgateLogo,
+    image: IMAGE_URLS.clients.colgate,
     alt: 'Colgate',
   },
   {
     name: 'flybondi',
-    image: flybondiLogo,
+    image: IMAGE_URLS.clients.flybondi,
     alt: 'flybondi',
   },
   {
     name: 'Força',
-    image: forcaLogo,
+    image: IMAGE_URLS.clients.forca,
     alt: 'Força BY SAMSA DIGITAL',
   },
   {
     name: 'Sanofi',
-    image: sanofiLogo,
+    image: IMAGE_URLS.clients.sanofi,
     alt: 'Sanofi',
   },
   {
     name: 'Ford',
-    image: fordLogo,
+    image: IMAGE_URLS.clients.ford,
     alt: 'Ford',
   },
 ]

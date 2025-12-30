@@ -1,5 +1,4 @@
-import poloImage from '../assets/images/current-projects/polo.png'
-import territorioImage from '../assets/images/current-projects/territorio.png'
+import { IMAGE_URLS } from '../config/storage'
 
 export type ProjectStatus = 'pre-production' | 'post-production'
 
@@ -16,14 +15,14 @@ export const currentProjects: CurrentProject[] = [
     id: 'polo',
     title: { es: 'POLO', en: 'POLO' },
     subtitle: { es: 'Polo Cortometraje - Pre producción', en: 'Polo Short Film - Pre-production' },
-    image: poloImage,
+    image: IMAGE_URLS.currentProjects.polo,
     status: 'pre-production',
   },
   {
     id: 'territorio',
     title: { es: 'Territorio', en: 'Territorio' },
     subtitle: { es: 'Documental - Post producción', en: 'Documentary - Post-production' },
-    image: territorioImage,
+    image: IMAGE_URLS.currentProjects.territorio,
     status: 'post-production',
   },
 ]
